@@ -1,0 +1,13 @@
+[Unit]
+Description=Generate /etc/thinkfan.conf from active hwmon sensors
+Before=thinkfan.service
+After=local-fs.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/thinkfan-gen.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
