@@ -48,16 +48,20 @@ This tool solves the problem by:
 
   ```bash
   sudo apt install thinkfan
+  ```
 
 ---
 
 ## 📁 Installation
 
-```bash
-git clone https://github.com/karthikasturi/thinkfan-autogen.git
-cd thinkfan-autogen
-chmod +x setup.sh
-./setup.sh
+- Installation from source
+
+  ```bash
+  git clone https://github.com/karthikasturi/thinkfan-autogen.git
+  cd thinkfan-autogen
+  chmod +x setup.sh
+  ./setup.sh
+  ```
 
 ---
 
@@ -65,14 +69,17 @@ chmod +x setup.sh
 
 - This service only on next reboot so, to start using it follow the steps mentioned below
 
-```bash
-sudo systemctl start thinkfan-gen.service
-sudo systemctl restart thinkfan
+  ```bash
+  sudo systemctl start thinkfan-gen.service
+  sudo systemctl restart thinkfan
+  ```
 
 ---
 
 ## 🧼 Uninstall
 
-```bash
-chmod +x uninstall.sh
-./uninstall.sh
+- Steps to uninstall from source
+  ```bash
+  chmod +x uninstall.sh
+  ./uninstall.sh
+  ```
